@@ -100,20 +100,66 @@ textarea {
 
 
 body{
-    background: url('../img/background.png') no-repeat;
+    width：1024px;
+    height：auto;
+    background: url('../img/background.png') no-repeat  50% 0%;
 }
-
-
-
+header#branding{
+    margin-top:-20px;
+    position: fixed;
+    width:100%;
+    background: #aaa;
+}
 nav#primary{
     position: fixed;
-    right: 20px;
+    left: 50%;
     list-style: none
 }
 
+nav#primary li {
+    position: relative;
+    height: 20px;
+}
 
+nav#primary h2{
+    position: absolute;
+    display: none;
+    right: 22px;
+    top: 0px;
+    
+    color: #fff;
+    white-space: nowrap;
+    background: transparent url('../img/nav-arrow.png')  no-repeat 100% 100%;
+}
 
+nav#primary a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: transparent url('../img/nav-dot.png') 4px 4px no-repeat;
+}
+nav#primary a:hover, nav#primary a.active {
+    background: transparent url('../img/nav-dot.png') 4px -16px no-repeat;
+}
 
+#spring{
+
+    height:900px;
+    display: block;
+}
+#summer{
+    height:900px;
+    display: block;
+}
+
+#autumn{
+    height:900px;
+    display: block;
+}
+#winter{
+    height:900px;
+    display: block;
+}
 
 /* ==========================================================================
    Helper classes
