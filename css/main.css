@@ -207,6 +207,7 @@ header#branding{
 /*===========================================================================
     Animation
 =========================================================================*/
+/*============================spring==============================*/
 #leaf1{
     position: absolute;
     top:300px;
@@ -233,7 +234,7 @@ header#branding{
     left:650px;
 }
 #fengzheng{
-     position: absolute;
+    position: absolute;
     top:215px;
     left:650px;
 }
@@ -258,9 +259,93 @@ header#branding{
 #door_right{
     position: absolute;
     right:2px;
-   
-    
 }
+/*============================summer===============================*/
+.container{
+    padding-top: 20%;
+    margin-left: 40%;
+    width:60%;
+    height:100%;
+}
+
+#slider ul, #slider li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+ 
+    #slider li{
+        /* 
+            define width and height of list item (slide)
+            entire slider area will adjust according to the parameters provided here
+        */ 
+        width:447px;
+        height:251px;
+        overflow:hidden;
+    }
+            
+    #prevBtn, #slider1prev{ 
+        width:40px;
+        height:40px;
+        position:absolute;
+        left:-21px;
+        top:106px;
+        z-index:20;
+        }
+    #nextBtn, #slider1next{ 
+        width:42px;
+        height:41px;
+        position:absolute;
+        right:-21px;
+        top:106px;
+        z-index:20;
+        }
+                                                            
+    #prevBtn a, #nextBtn a,
+    #slider1next a, #slider1prev a{  
+        display:block;
+        position:relative;
+        width:42px;
+        height:41px;
+        background:url(../img/prev.png) no-repeat 0 0;  
+        }   
+    #nextBtn a, #slider1next a{ 
+        background:url(../img/next.png) no-repeat 0 0;  
+        }
+    
+        
+    /* numeric controls */  
+
+    ol#controls{
+        margin:1em 0;
+        padding:0;
+        height:28px;    
+        }
+    ol#controls li{
+        margin:0 10px 0 0; 
+        padding:0;
+        float:left;
+        list-style:none;
+        height:28px;
+        line-height:28px;
+        }
+    ol#controls li a{
+        float:left;
+        height:28px;
+        line-height:28px;
+        border:1px solid #ccc;
+        background:#DAF3F8;
+        color:#555;
+        padding:0 10px;
+        text-decoration:none;
+        }
+    ol#controls li.current a{
+        background:#5DC9E1;
+        color:#fff;
+        }
+    ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+    
+/* // Easy Slider */
 
 /* ==========================================================================
    Helper classes

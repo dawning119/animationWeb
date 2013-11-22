@@ -40,6 +40,18 @@ $(document).ready(function(){
 
 });
 
+//usage for easySlider
+$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true,
+				continuous: true,
+				nextId: "slider1next",
+				prevId: "slider1prev"
+			});
+
+		});
+		
+
 function detectPage(){
 			stopAnimation();
         	var currentScroll = $(window).scrollTop();
