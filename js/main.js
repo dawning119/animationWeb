@@ -35,8 +35,11 @@ $(document).ready(function(){
 		}
 	);
 
-	
 
+	$('.nuts').click(function(){
+		$(this).animate({top:"3000px"},'middle');
+		$(this).rotate(30);
+	});
 
 });
 
@@ -101,8 +104,6 @@ var grassAngle=0;
 function springAnimate(){ 
 
 	animationId = setInterval(grassEffect,50);
-	
-	
 
     animationArray[i]=animationId;
     i++;
@@ -131,12 +132,12 @@ function springAnimate(){
 	//door effect
 	$("#door").hover(
 		function(){
-			$('#door_left').animate({left:"-142px"},'slow');
-			$('#door_right').animate({right:"-142px"},'slow');
+			$('#door_left').stop().animate({left:"-142px"},'slow');
+			$('#door_right').stop().animate({right:"-142px"},'slow');
 		},
 		function(){
-			$('#door_left').animate({left:"0px"},'slow');
-			$('#door_right').animate({right:"2px"},'slow');
+			$('#door_left').stop().animate({left:"0px"},'slow');
+			$('#door_right').stop().animate({right:"2px"},'slow');
 		}
 	);
 
@@ -165,6 +166,7 @@ function summerAnimate(){
       			orient=true;
       	}
 	}
+
 }
 //-------------------------Autumn page--------------------------
 

@@ -150,12 +150,12 @@ nav h1{
 }
 
 
-.full-page{
+/*.full-page{
     height:100%;
     text-align: center;
     width: 100%;
     
-}
+}*/
 
 #logo{
     width:80%;
@@ -189,19 +189,44 @@ header#branding{
 
 #spring{
     background: transparent url('../img/bg_spring.png') 50% 0% no-repeat;
+    height:1076px;
+    width:1125px;
+    margin-left:auto;
+    margin-right: auto;
+
 }
 
 #summer{
     background: transparent url('../img/bg_summer.png') 50% 0% no-repeat;
+    height:1040px;
+    width:1089px;
+    margin-left:auto;
+    margin-right: auto;
+
 }
 #autumn{
     background: transparent url('../img/bg_autumn.png') 50% 0% no-repeat;
+    height:929px;
+    width:1137px;
+        margin-left:auto;
+    margin-right: auto;
+
 }
 #winter{
     background: transparent url('../img/bg_winter.png') 50% 0% no-repeat;
+    height:909px;
+    width:1068px;
+        margin-left:auto;
+    margin-right: auto;
+
 }
 #soil{
     background: transparent url('../img/bg_soil.png') 50% 0% no-repeat;
+    height:1136px;
+    width:1094px;
+        margin-left:auto;
+    margin-right: auto;
+
 }
 
 /*===========================================================================
@@ -261,7 +286,72 @@ header#branding{
     right:2px;
 }
 /*============================summer===============================*/
-.container{
+
+
+#ship {
+    position: absolute;
+    left:550px;
+    top:1300px;
+}
+#light {
+   
+   position: absolute;
+    left:560px;
+    top:1262px;
+    -webkit-animation: twinkling 2s infinite ease-in-out; 
+    height:68px;
+    width:67px;
+
+}
+#star1 {
+    opacity: 0%;
+    margin-top:800px;
+    margin-left:50px;
+    -webkit-animation: twinkling 3s 2s infinite ease-in-out; 
+}
+
+#star2 {
+    opacity: 0%;
+    margin-top:1000px;
+    margin-left:350px;
+    -webkit-animation: twinkling 4s 3s infinite ease-in-out; 
+}
+
+#star3 {
+    opacity: 0%;
+    margin-top:1100px;
+    margin-left:550px;
+    -webkit-animation: twinkling 6s 1s infinite ease-in-out; 
+}
+
+
+@-webkit-keyframes twinkling { /*透明度由0到1*/
+0%{
+    opacity:0; /*透明度为0*/
+
+    }
+
+65%{
+    opacity:0.8; /*透明度为1*/
+
+    }
+100%{
+    opacity: 0;
+    }
+}
+
+/*======================autumn======================================*/
+#nut1 {
+    position: absolute;
+      left:500px;
+    top:2550px;
+
+}
+
+
+/*=================================================================*/
+
+.container {
     padding-top: 20%;
     margin-left: 40%;
     width:60%;
